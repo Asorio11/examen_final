@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>examen_final</title>
+	  <link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body>
+
+	  <div class="container">
+
+			<h1>Calculadora Integral de Tri&aacute;ngulos</h1>
+			<p>An&aacute;lisis completo de un tri&aacute;ngulo a partir de sus tres lados</p>
+			
+			<br><br>
+
+			<div class="caja1">
+
+				<h3>Ingrese las medidas de los lados</h3>	
+
+				<div class="input-section">	
+				
+					<label>Lado a: <br><br><input type="number" id="ladoA" placeholder=""></label>
+					<label>Lado b: <br><br><input type="number" id="ladoB" placeholder=""></label>		
+					<label>Lado c: <br><br><input type="number" id="ladoC" placeholder=""></label>
+
+					<button onclick="calcularTriangulo()">Calcular</button>
+
+				</div>
+
+			</div>
+
+
+			<!--caja_d_resultados-->
+			<div class="results">
+
+				<br><br>	<br><br>
+				<!--triangulo-->
+				<canvas id="triangleCanvas" width="400" height="400"></canvas>
+				
+				<!--angulos-->
+				  <div class="result-item">
+
+					 <h3>&Aacute;ngulos</h3>
+
+					 <p>&Aacute;ngulo α (a): <span id="anguloA"></span>°</p>
+					 <p>&Aacute;ngulo β (b): <span id="anguloB"></span>°</p>
+					 <p>&Aacute;ngulo γ (c): <span id="anguloC"></span>°</p>
+
+				  </div>
+
+				<!--mediana-->
+				  <div class="result-item">
+
+					 <h3>Medianas</h3>
+
+					 <p>Mediana ma: <span id="medianaA"></span></p>
+					 <p>Mediana mb: <span id="medianaB"></span></p>
+					 <p>Mediana mc: <span id="medianaC"></span></p>
+
+				  </div>
+
+				<!--bisectriz-->
+				  <div class="result-item">
+
+					 <h3>Bisectrices</h3>
+
+					 <p>Bisectriz ta: <span id="bisectrizA"></span></p>
+					 <p>Bisectriz tlx: <span id="bisectrizB"></span></p>
+					 <p>Bisectriz tc: <span id="bisectrizC"></span></p>
+
+				  </div>
+
+				<!--alturas-->
+				  <div class="result-item">
+
+					 <h3>Alturas</h3>
+
+					 <p>Altura ha: <span id="alturaA"></span></p>
+					 <p>Altura hb: <span id="alturaB"></span></p>
+					 <p>Altura hc: <span id="alturaC"></span></p>
+
+				  </div>
+
+				<!--perimetro_area-->
+				  <div class="result-item">
+
+						<h3>Per&iacute;metro y &Aacute;rea</h3>
+						<p>Per&iacute;metro: <span id="perimetro"></span></p>
+						<p>&Aacute;rea: <span id="area"></span></p>
+
+				  </div>
+
+			</div>
+
+		</div>
+	<!--ref_js-->
+	  <script src="js/script.js"></script>
+
+	</body>
+
+</html>
